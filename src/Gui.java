@@ -21,8 +21,11 @@ public class Gui extends JFrame {
         panel = new JPanel();
         highScore = new JPanel();
 
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        double width = screenSize.getWidth();
+        double height = screenSize.getHeight();
         setSize(600,700);
-        setLocation(630,200);
+        setLocation((int)width/2-300,(int)height/2-350);
         setLayout(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
